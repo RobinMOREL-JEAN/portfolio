@@ -42,6 +42,10 @@ ul {
     align-items: center;
 }
 
+.padding-1 {
+    padding: 1rem 0rem;
+}
+
 /* === Header and navigation menu === */
 
 header {
@@ -288,7 +292,7 @@ header {
     article {
         width: 80%;
         min-width: 320px;
-        margin: 5rem;
+        margin-top: 5rem;
         padding: 1rem;
 
         background-color: white;
@@ -310,6 +314,7 @@ header {
     #about {
         article {
             width: 100%;
+            padding: 0;
         }
     }
 } 
@@ -328,11 +333,13 @@ header {
 }
 #skills-global-container {
     display: grid;
-    grid-template-columns: repeat(3, 30rem);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 10rem);
     gap: 1rem;
 
     text-align: center;
+
+    min-width: 90vw;
 
     h2 {
         grid-column: 1 / -1;
@@ -341,12 +348,12 @@ header {
 
 @media screen and (max-width: 1500px) {
     #skills-global-container {
-        grid-template-columns: repeat(2, 30rem);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 10rem);
     }
 }   
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1000px) {
     #skills-global-container {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(8, 10rem);
@@ -385,6 +392,15 @@ header {
 
     p {
         font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .skills-block {
+        div {
+            flex-direction: column;
+            gap: 1rem;
+        }
     }
 }
 
@@ -449,6 +465,8 @@ meter::-moz-meter-bar {
     flex-wrap: wrap;
     justify-content: center;
 
+    margin-top: 5rem;
+
     gap: 1rem;
 
     article {
@@ -470,20 +488,25 @@ meter::-moz-meter-bar {
             
             font-size: 2rem;
             font-style: italic;
+
+            text-align: center;
         }
 
         p {
-            height: 15rem;
+            min-height: 15rem;
             padding: 1rem;
 
             font-size: 1.5rem;
             line-height: 2.5rem;
             text-align: center;
             color: #5a5a5a;
+
         }
 
         footer {
-            height: 5rem;
+            min-height: 5rem;
+            gap: 1rem;
+
 
             span {
                 border-radius: 1rem;
@@ -491,6 +514,20 @@ meter::-moz-meter-bar {
                 color: white;
 
                 padding: 0.5rem 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .project-blocks {
+        article {
+            footer {
+                gap: 0.5rem;
+    
+                span {
+                    font-size: 0.8rem;
+                }
             }
         }
     }
