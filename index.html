@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr"></html>
+<head>
+    <title>Robin MOREL-JEAN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="styles/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <script src="scripts/config.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <nav id="navigation-menu" class="flex-justify-align">
+            <ul>
+                <li><a href="#home" onclick="toggleNav()">Home</a></li>
+                <li><a href="#about" onclick="toggleNav()">A propos</a></li>
+                <li><a href="#skills" onclick="toggleNav()">Competences</a></li>
+                <li><a href="#projects" onclick="toggleNav()">Projets</a></li>
+                <li><a href="#contact" onclick="toggleNav()">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-header">
+            <button id="nav-toggle" onclick="toggleNav()"><img src="images/iconMenu.png" alt="open navigation menu on narrow screen"></button>
+            <p>Robin MOREL-JEAN</p>
+        </div>
+        <div id="mobile-background-overlay" onclick="toggleNav()"></div>
+    </header>
+
+    <main>
+        <section class="flex-justify-align" id="home">
+            <div>
+                <p>Robin MOREL-JEAN</p>
+                <h1>Developpeur Web en Devenir</h1>
+            </div>
+            <a href="#about">
+                <img src="images/arrow.png" alt="fleche cliquable pour acceder au reste du site">
+            </a>
+        </section>
+    
+        <section class="flex-justify-align" id="about">
+            <h2>A PROPOS</h2>
+            <article>
+                <p>Bonjour ! Je suis un développeur web en formation, passionné par le code et la création de sites et d'applications.</p>
+
+                <p>En autodidacte, je me suis formé en HTML, CSS et JavaScript, et je mets un point d'honneur à écrire un code propre, clair et maintenable, avec pour objectif d'atteindre la qualité d'un environnement professionnel.</p>
+
+                <p>Sur cette base solide, je poursuis actuellement ma formation sur de nouveaux langages, frameworks et technologies, afin que chaque projet soit une nouvelle ascension vers de meilleurs compétences.</p>
+
+                <p>Je suis actuellement à la recherche d'opportunités pour mettre mes connaissances au service de projets ambitieux et continuer à évoluer dans ce domaine passionnant.</p>
+            </article>
+        </section>
+        
+        <section class="flex-justify-align" id="skills">
+            <div id="skills-global-container">
+                <h2>Competences</h2>
+                <div class="skills-block flex-justify-align">
+                    <table>
+                        <tr>
+                            <th>HTML5</th>
+                            <td>Avancé</td>
+                        </tr>
+                    </table>
+                    <meter value="0.9" min="0" max="1" aria-label="Compétence HTML : Avancé">Avancé</meter>
+                </div>
+                <div class="skills-block flex-justify-align">
+                    <table>
+                        <tr>
+                            <th>CSS3</th>
+                            <td>Avancé</td>
+                        </tr>
+                    </table>
+                    <meter value="0.9" min="0" max="1" aria-label="Compétence CSS : Avancé">Avancé</meter>
+                </div>
+                <div class="skills-block flex-justify-align">
+                    <table>
+                        <tr>
+                            <th>JavaScript</th>
+                            <td>Intermédiaire</td>
+                        </tr>
+                    </table>
+                    <meter value="0.5" min="0" max="1" aria-label="Compétence JavaScript : Intermédiaire">Intermédiaire</meter>
+                </div>
+                <div class="skills-block flex-justify-align">
+                    <table>
+                        <tr>
+                            <th>Git</th>
+                            <td>Intermédiaire</td>
+                        </tr>
+                    </table>
+                    <meter value="0.5" min="0" max="1" aria-label="Compétence Git : Intermédiaire">Intermédiaire</meter>
+                </div>
+                <div class="skills-block flex-justify-align">
+                    <table>
+                        <tr>
+                            <th>TypeScript</th>
+                            <td>Débutant</td>
+                        </tr>
+                    </table>
+                    <meter value="0.3" min="0" max="1" aria-label="Compétence TypeScript : Débutant">Débutant</meter>
+                </div>
+                    
+                <div class="skills-block flex-justify-align">
+                    <table>
+                        <tr>
+                            <th>NodeJS</th>
+                            <td>Débutant</td>
+                        </tr>
+                    </table>
+                    <meter value="0.3" min="0" max="1" aria-label="Compétence NodeJS : Débutant">Débutant</meter>
+                </div>
+                <div class="skills-block flex-justify-align">
+                   <h3>&lt;/&gt;<br>Toujours en apprentissage.<br>Toujours en pregression.</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projet</h2>
+            <div id="projects-global-container">
+                <div class="project-blocks">
+                    <table>
+                        <tr>
+                            <th>Portfolio</th>
+                        </tr>
+                        <tr>
+                            <td>Portfolio moderne et épuré, développé entierement avec HTML, CSS et JS.<br>Ce projet m'a permis de developper mes qualité de développeur en responsive design.</td>
+                        </tr>
+                        <tr class="flex-justify-align">
+                            <td>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                                <span>Design</span>
+                            </td>
+                        </tr>
+                    </table>   
+                    <div class="project-hover-overlays flex-justify-align">
+                        <a href="" class="flex-justify-align"><img src="images/iconOpenLink.png" alt="open project link on a new tab"></a>
+                    </div>
+                </div>
+
+                <div class="project-blocks">
+                    <table>
+                        <tr>
+                            <th>Site Vitrine Montagne</th>
+                        </tr>
+                        <tr>
+                            <td>Site responsive présentant des destinations de randonées.</td>
+                        </tr>
+                        <tr class="flex-justify-align">
+                            <td>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                                <span>Design</span>
+                            </td>
+                        </tr>
+                    </table>   
+                    <div class="project-hover-overlays flex-justify-align">
+                        <p>A Venir</p>
+                    </div>
+                </div>
+
+                <div class="project-blocks">
+                    <table>
+                        <tr>
+                            <th>Guess Word</th>
+                        </tr>
+                        <tr>
+                            <td>Script JS basé sur le concept de "mot du jour".</td>
+                        </tr>
+                        <tr class="flex-justify-align">
+                            <td>
+                                <span>TypeScript</span>
+                                <span>JS</span>
+                            </td>
+                        </tr>
+                    </table>   
+                    <div class="project-hover-overlays flex-justify-align">
+                        <p>A Venir</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex-justify-align" id="contact">
+            <h2>Contact</h2>
+            <div id="contact-block">
+                <p>Intéréssé par mon profil ? N'hésitez pas à me contacter pour discuter de vos projets ou d'opportunités de collaboration.</p>
+                <nav>
+                    <ul>
+                        <li><a href="" class="contact-icon"><img src="images/iconMailDark.png" alt="Icone Email">Email</a></li>
+                        <li><a href="" class="contact-icon"><img src="images/iconGitHubDark.png" alt="Icone GitHub">GitHub</a></li>
+                        <li><a href="" class="contact-icon"><img src="images/iconLinkedInDark.png" alt="Icone LinkedIn">LinkedIn</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </main>
+    <footer class="flex-justify-align">
+        <p>Robin MOREL-JEAN @2025</p>
+    </footer>
+</body>
