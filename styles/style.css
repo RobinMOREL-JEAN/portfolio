@@ -21,8 +21,6 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     color: #2B2B2B;
-
-    background-color: #2B2B2B;
 }
 
 h2 {
@@ -321,7 +319,7 @@ header {
 #skills {
     scroll-margin-top: 7vh;
 
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     border: 0.1rem solid #e4e4e4;
     background: #F5F5F5;
     background: linear-gradient(179deg, rgba(245, 245, 245, 1) 0%, rgba(242, 252, 255, 1) 100%);
@@ -431,7 +429,7 @@ meter::-moz-meter-bar {
     background: linear-gradient(179deg, rgba(245, 245, 245, 1) 0%, rgba(255, 242, 242, 1) 100%);
 
     min-height: 100vh;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     padding-top: 0rem;
 
     display: flex;
@@ -532,7 +530,7 @@ meter::-moz-meter-bar {
     border: 0.1rem solid #e4e4e4;
     background-color: #F5F5F5;
     min-height: 100vh;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
 
     flex-direction: column;
 }

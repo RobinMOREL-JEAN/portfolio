@@ -1,28 +1,25 @@
-if (window.innerWidth >= 800){
-    window.addEventListener("scroll", () => {
-        const desktopMenu = document.querySelector("#navigation-menu");
-            if (window.scrollY > 100) {
-                desktopMenu.classList.add("header-color-swap");
-                console.log(window.innerWidth);
-            }
-            else {
-                desktopMenu.classList.remove("header-color-swap");
-            }
-    })
-}
+const menu = document.querySelector("#navigation-menu");
 
+window.addEventListener("scroll", () => {
+    if (window.innerWidth >= 800){
+        if (window.scrollY > 100) {
+            menu.classList.add("header-color-swap");
+        }
+        else {
+            menu.classList.remove("header-color-swap");
+        }
+    }
+})
 
 const toggleNav = () => {
-    const mobileMenu = document.querySelector("#navigation-menu");
     const mobileBackgroundOverlay = document.querySelector("#mobile-background-overlay");
+    const isMenuOpen = menu.classList.contains("open-menu");
 
-    const isMobileMenuOpen = mobileMenu.classList.contains ("open-menu");
-
-    if (isMobileMenuOpen) {
-        mobileMenu.classList.remove("open-menu");
+    if (isMenuOpen) {
+        menu.classList.remove("open-menu");
         mobileBackgroundOverlay.classList.remove("open-menu");
     } else {
-        mobileMenu.classList.add("open-menu");
+        menu.classList.add("open-menu");
         mobileBackgroundOverlay.classList.add("open-menu");
     }
 }
