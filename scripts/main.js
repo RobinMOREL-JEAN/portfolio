@@ -1,4 +1,5 @@
 const menu = document.querySelector("#navigation-menu");
+const mobileBackgroundOverlay = document.querySelector("#mobile-background-overlay");
 
 window.addEventListener("scroll", () => {
     if (window.innerWidth >= 800){
@@ -12,7 +13,6 @@ window.addEventListener("scroll", () => {
 })
 
 const toggleNav = () => {
-    const mobileBackgroundOverlay = document.querySelector("#mobile-background-overlay");
     const isMenuOpen = menu.classList.contains("open-menu");
 
     if (isMenuOpen) {
