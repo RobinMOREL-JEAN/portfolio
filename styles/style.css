@@ -500,6 +500,9 @@ meter::-moz-meter-bar {
             line-height: 2.5rem;
             text-align: center;
             color: #5a5a5a;
+
+            display: flex;
+            align-items: center;
         }
 
         footer {
